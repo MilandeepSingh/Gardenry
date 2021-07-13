@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Are you sure?"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Are you sure you want to delete this plant?"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes_custom_prompt"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_corners"
+            android:clickable="true"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:layout_marginRight="25dp"
+            android:shadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:elevation="25dp"/>
+
+
+        <Button
+            android:id="@+id/btn_no_custom_prompt"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/cardview_light_background"
+            android:text="No"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:elevation="25dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

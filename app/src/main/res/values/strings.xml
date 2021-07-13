@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Gardenry</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_plants">My Plants</string>
+    <string name="underlined"><u>Request addition</u></string>
+
+    <string name="why_notes_heading"><b>Why gardening notes?</b>"\n\n"</string>
+    <string name="why_notes">This module lets you write your daily experiences
+                                so you can get back over them later to have a smile over your face reading about the
+                                harvests you made last season or become aware of the last
+                                year plant diseases in advance...
+                                "\n"Overall, it can help you compare your progress in the field of gardening...
+        \n<i>Happy Gardenry!</i></string>
+    <string name="title_activity_gardening_tools">ScrollingActivity</string>
+
+    <string name="gloves">While gardening can be a wonderful hobby, it can quickly turn into a thorny and splintery hassle without the right pair of gloves.
+Gloves should be durable but not too bulky, especially for working with seeds or transplanting seedlings.
+Fit is important, as poorly fitting gloves can cause blisters or result in accidents from slipping off.
+Fabrics that are water resistant, but also breathable, will help keep hands cool and comfortable.
+Longer cuffs protect wrists and forearms from scratches and keep soil from getting in.
+Store gloves out of sunlight, away from water and safe from insects.</string>
+
+    <string name="pruners">Hand pruners, also called secateurs, help reign in plants that are getting out of control and taking over. Anvil-style pruners cut with a sharp blade meeting a flat surface, similar to a knife on a board. Bypass pruners cut with a sharp blade passing by a sharp-edged flat surface, more like scissors.
+Anvil pruners are best for dead wood and can cause crush injuries to fresh, green stems and branches.
+Bypass pruners are better for live plants and green wood.
+Pruners should fit easily in the palm of your hand.
+Ratcheting pruners provide increased cutting strength, perfect for anyone with reduced hand strength or arthritis.
+For cleaner cuts and less injury to plants, pruners should be sharpened regularly.</string>
+
+    <string name="loppers">Another cutting tool, loppers are basically long-handled pruners used to trim hard to reach areas and cut thicker branches. The long handles provide the leverage it takes to cut through branches up to an inch or more in diameter. There are anvil and bypass types, just like pruners. Handles generally range from 16 to 36 inches.
+Bypass loppers are more precise in cut location than anvil style.
+Longer handled loppers can be heavy. Know what you’ll be cutting and how far you’ll need to reach and get the appropriate length.
+Lightweight aluminum or carbon-composite handles can be lighter.
+Like pruners, keep lopper blades in good condition and sharpen regularly.</string>
+
+    <string name="fork">An efficient tool for turning soil, garden forks can dig into dense soil better than a spade.
+Forks with a slight curve to the spines are useful for scooping mulch or turning compost piles, much like a pitchfork.
+Straight tines are better for digging; great for compacted, rocky, or clay soil.
+Square tines are stronger than flat tines which can bend when they hit a rock or root.</string>
+
+    <string name="trowel">The essential hand tool, trowels are wonderful for transplanting bedding plants and herbs, planting containers, and taking out weeds.
+Select a broad blade to move more soil or a long, narrow blade to dig up weeds or for rocky soil.
+The handle should fit comfortably in your hand.
+Trowels forged from stainless steel, or at least with a stainless steel head, are more durable and will last longer.</string>
+
+    <string name="spade">These short-handled square shovels are garden workhorses. They make easy work of digging holes for plants, edging, lifting sod, and moving small mounds of dirt from one area to another. This tool can be more on the pricey side, but a good spade will last you the rest of your gardening life.
+Treads on top of the blade give a sturdier and more comfortable foot surface when needing an extra push.
+Ash hardwood handles are durable and absorb shock and vibration.
+Generally available with long or short handles. Longer handles provide more leverage, but are heavier.
+Stainless steel heads are strong and won’t rust.</string>
+
+    <string name="rake">When leaves and debris fall, your sturdy rake is there to whisk them away. Rakes come in a wide variety of styles and sizes, but a great starter is a standard leaf rake.
+Adjustable rakes do the job of more than one tool, reaching into narrow areas or gathering large piles of leaves.
+Steel tines are stronger and may be rougher on delicate lawns than plastic tines.</string>
+
+    <string name="hoe">Your type of garden will dictate what type of hoe is best for you. A veggie garden may require a sturdy, wide hoe. If you have perennial gardens, a more delicate touch and a thinner hoe may be required. Hoes are useful in preparing garden and flower beds and cutting down weeds.
+Look for a comfortable handle with a long reach.
+A sharp blade works better and is easier to use.
+Weeding hoes, also called hula or stirrup hoes, have an open square head and are pushed back and forth just under the soil surface to cut down top growth.
+Flat hoes are good for turning the soil in rows in vegetable gardens.</string>
+
+</resources>

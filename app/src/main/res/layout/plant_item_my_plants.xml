@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Gardenry"
+    android:orientation="vertical"
+    android:layout_marginBottom="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/black">
+
+            <ImageView
+                android:id="@+id/img_image_my_plants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:minHeight="70dp"
+                android:layout_marginBottom="25dp"
+                android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/pbar_image_my_plants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:background="@color/dark_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:paddingTop="4dp">
+            <TextView
+                android:id="@+id/txt_name_my_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plantname"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_qty_my_plants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="qty"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

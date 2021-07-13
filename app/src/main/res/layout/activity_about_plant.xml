@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutPlant"
+    android:background="@drawable/bg_about_plant">
+
+        <LinearLayout
+            android:id="@+id/ll_name_about_plant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+                <TextView
+                    android:id="@+id/txt_name_about_plant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Name"
+                    android:gravity="center"
+                    android:textSize="50dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="80dp"/>
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="250dp"
+            app:cardBackgroundColor="@color/white"
+            android:outlineSpotShadowColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ll_name_about_plant"
+            android:layout_margin="25dp"
+            app:cardElevation="25dp"
+            android:id="@+id/cv_image_about_plant">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center"
+                    >
+
+                        <ImageView
+                            android:id="@+id/img_plantimage_about_plant"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/new_plant"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_sci_name"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="Sci. Name"
+                android:layout_below="@+id/cv_image_about_plant"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:elevation="25dp"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_indoor_about_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt_sci_name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:elevation="25dp"
+            android:padding="10dp"
+            android:layout_margin="28dp">
+                <ImageView
+                    android:id="@+id/img_tick_indoor_about_plants"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                        android:src="@drawable/wrong_mark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Indoor"
+                    android:layout_below="@+id/cv_image_about_plant"
+                    android:layout_centerHorizontal="true"
+
+                    android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ornamental_about_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_indoor_about_plant"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:elevation="25dp"
+            android:padding="10dp">
+                <ImageView
+                    android:id="@+id/img_tick_ornamental_about_plants"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/wrong_mark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Ornamental"
+                    android:layout_below="@+id/cv_image_about_plant"
+                    android:layout_centerHorizontal="true"
+
+                    android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_productive_about_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_ornamental_about_plant"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:elevation="25dp"
+            android:padding="10dp"
+            android:layout_margin="28dp">
+                <ImageView
+                    android:id="@+id/img_tick_productive_about_plants"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/wrong_mark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Productive"
+                    android:layout_below="@+id/cv_image_about_plant"
+                    android:layout_centerHorizontal="true"
+
+                    android:textSize="25dp"/>
+        </LinearLayout>
+
+</RelativeLayout>

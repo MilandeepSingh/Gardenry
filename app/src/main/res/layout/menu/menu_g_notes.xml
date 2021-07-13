@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newgardenry.MyPlants">
+    <item
+        android:id="@+id/menu_new_note_g_notes"
+        android:orderInCategory="100"
+        android:title="New note"
+        app:showAsAction="never" />
+
+<!--    <item-->
+<!--        android:id="@+id/menu_request_new_plant_my_plants"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Request new plant"-->
+<!--        app:showAsAction="never" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/menu_about_us_my_plants"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="About us"-->
+<!--        app:showAsAction="never" />-->
+
+
+</menu>

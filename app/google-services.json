@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765433192759",
+    "project_id": "gardenry-d35ba",
+    "storage_bucket": "gardenry-d35ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765433192759:android:d5baac4ffd7be025a83ab2",
+        "android_client_info": {
+          "package_name": "com.example.gardenry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765433192759-0blhsl1jgnje2scshnmdrmkotmsjo45o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4P1Mt7MsWB5zkr5lxdKVNwELzbk8pxgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765433192759-0blhsl1jgnje2scshnmdrmkotmsjo45o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

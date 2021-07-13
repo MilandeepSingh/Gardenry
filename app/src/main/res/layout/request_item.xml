@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000"
+    android:padding="20dp">
+    <!--    <ImageView-->
+    <!--        android:layout_width="91dp"-->
+    <!--        android:layout_height="91dp"-->
+    <!--       />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/white"
+        android:elevation="25dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plant"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/txt_name_request_item"/>
+
+        </LinearLayout>
+        <!--    <TextView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Type : Medicinal Herb"-->
+        <!--        android:layout_centerHorizontal="true"-->
+        <!--        android:textSize="20dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        android:background="@drawable/rounded_corners"-->
+        <!--        android:id="@+id/Requeststatus_type"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:layout_alignParentLeft="true"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not yet given..."
+                android:textSize="22sp"
+                android:layout_marginLeft="120dp"
+                android:id="@+id/txt_description_request_item"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks: "
+                    android:layout_alignParentLeft="true"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not yet given..."
+                    android:textSize="22sp"
+                    android:layout_marginLeft="120dp"
+                    android:id="@+id/txt_remarks_request_item"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newgardenry.MyPlants">
+    <item
+        android:id="@+id/menu_my_plants_new_plant"
+        android:orderInCategory="100"
+        android:title="View My Plants"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_all_plants_new_plant"
+        android:orderInCategory="100"
+        android:title="View All Plants"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_homepage_new_plant"
+        android:orderInCategory="100"
+        android:title="Home page"
+        app:showAsAction="never" />
+</menu>

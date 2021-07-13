@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:id="@+id/myLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/headtext"
+
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food waste is\nNOT garbage!"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="40dp"/>
+            <ImageView
+                android:id="@+id/compostimg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@id/headtext"
+                android:src="@drawable/composting"/>
+            <TextView
+                android:id="@+id/bodytext"
+                android:layout_below="@id/compostimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food waste is not garbage!"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/headtext2"
+                android:layout_below="@id/bodytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is compost?"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                    android:layout_marginTop="25dp"
+                android:textSize="24dp"/>
+            <TextView
+                android:id="@+id/bodytext2"
+                android:layout_below="@id/headtext2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Food waste is not garbage!"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/headtext3"
+                android:layout_below="@id/bodytext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why should we compost?"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"/>
+            <TextView
+                android:id="@+id/bodytext3"
+                android:layout_below="@id/headtext3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Food waste is not garbage!"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/source"
+                android:text="Source : Internet"
+                android:layout_below="@id/bodytext4"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="280dp"
+
+/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/howtocompost"
+                android:text="How to compost?"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/bodytext3"
+                />
+            <TextView
+                android:id="@+id/bodytext4"
+                android:layout_below="@id/howtocompost"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Food waste is not garbage!"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpfulinfo"
+                android:text="Is this information helpful?"
+                android:layout_below="@id/bodytext4"
+                android:textColor="@color/black"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helpfulinfo"
+
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

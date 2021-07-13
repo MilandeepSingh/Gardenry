@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_card_group_member"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_corners"
+    android:elevation="10dp">
+
+
+
+    <ImageView
+        android:id="@+id/img_dp_group_member"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_name_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="Milandeep Singh"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_designation_group_member"
+        android:text="(Group Leader)"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#F00"/>
+
+
+    <TextView
+        android:id="@+id/txt_email_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:textSize="13dp"
+        android:text="ErrorFetchingEmailId"/>
+</LinearLayout>
+</LinearLayout>

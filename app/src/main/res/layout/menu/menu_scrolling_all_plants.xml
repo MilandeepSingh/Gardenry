@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newgardenry.MyPlants">
+    <item
+        android:id="@+id/menu_my_plants_all_plants"
+        android:orderInCategory="100"
+        android:title="View My Plants"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_homepage_all_plants"
+        android:orderInCategory="100"
+        android:title="Home page"
+        app:showAsAction="never" />
+</menu>

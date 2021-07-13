@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestStatus"
+    android:background="#C0C0C0">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_request_status"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:backgroundTint="@color/dark_green"
+        app:titleTextColor="@color/white"
+        app:title="Request Status"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar_request_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Requeststatus_view"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_request_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_margin="40dp"
+        android:foregroundTint="@color/white"
+        app:fabSize="normal"
+        app:maxImageSize="40dp"
+        android:elevation="8dp"
+        app:tint="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_green"/>
+
+</RelativeLayout>

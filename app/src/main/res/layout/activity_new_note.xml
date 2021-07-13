@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewNote"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Note"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+<!-- Edit Text Field-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <EditText
+            android:id="@+id/edt_note_new_note"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:minLines="5"
+            android:maxLines="15"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:hint="Write your note here..."
+            android:textAlignment="center"
+            android:maxLength="250"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+
+            />
+
+    </LinearLayout>
+
+        <!--Button Create-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_buttons_new_note"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/New_Note_Submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/rounded_corners"
+            />
+
+        <Button
+            android:id="@+id/New_Note_Cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_corners"
+            />
+    </RelativeLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/ll_pbar_add_new_note"
+            android:layout_gravity="center">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adding note..."
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>

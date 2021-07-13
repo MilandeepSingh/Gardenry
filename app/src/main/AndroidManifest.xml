@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gardenry">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gardenry" >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SplashScreen">
+
+        </activity>
+
+        <activity android:name=".AboutPlant"/>
+
+        <activity android:name=".Composting"/>
+
+        <activity android:name=".AboutUs">
+
+        </activity>
+
+        <activity android:name=".GardeningTools">
+
+        </activity>
+        <activity android:name=".Notes">
+
+        </activity>
+        <activity android:name=".NewNote"/>
+        <activity android:name=".EditNote"/>
+        <activity android:name=".RequestStatus">
+
+        </activity>
+
+        <activity android:name=".NewRequest">
+
+        </activity>
+
+        <activity android:name=".AllPlants"/>
+
+        <activity android:name=".NewPlant"/>
+
+    </application>
+
+</manifest>
