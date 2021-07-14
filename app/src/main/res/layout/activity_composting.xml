@@ -5,11 +5,14 @@
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto">
 
+
+
     <ScrollView
         android:id="@+id/scroll_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:layout_marginTop="50dp">
         <RelativeLayout
             android:id="@+id/myLayout"
             android:orientation="vertical"
@@ -115,6 +118,7 @@
                 android:layout_marginTop="25dp"
                 android:textColor="@color/black"
                 android:layout_below="@id/bodytext3"
+                android:layout_marginLeft="10dp"
                 />
             <TextView
                 android:id="@+id/bodytext4"
@@ -161,4 +165,17 @@
 
         </RelativeLayout>
     </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dark_green"
+            android:text="Learn About Composting"
+            android:textSize="26dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:hint="tyu"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
 </RelativeLayout>

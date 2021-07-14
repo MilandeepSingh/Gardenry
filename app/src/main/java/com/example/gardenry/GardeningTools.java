@@ -20,9 +20,6 @@ public class GardeningTools extends AppCompatActivity {
         setContentView(R.layout.activity_gardening_tools);
         listView = findViewById(R.id.ll_g_tools);
 
-        Toolbar tb = findViewById(R.id.toolbar_g_tools);
-        setSupportActionBar(tb);
-
         gTools = new ArrayList<>();
 
 

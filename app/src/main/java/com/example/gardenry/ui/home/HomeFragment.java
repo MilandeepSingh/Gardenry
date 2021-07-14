@@ -19,6 +19,7 @@ import com.example.gardenry.NewPlant;
 import com.example.gardenry.Notes;
 import com.example.gardenry.R;
 import com.example.gardenry.RequestStatus;
+import com.example.gardenry.ToDo;
 
 public class HomeFragment extends Fragment {
 
@@ -98,6 +99,21 @@ public class HomeFragment extends Fragment {
                 else if(event.getAction()==MotionEvent.ACTION_UP){
                     notes.setCardElevation(6);
                     startActivity(new Intent(getContext(), Notes.class));
+                }
+                return true;
+            }
+        });
+
+        CardView toDo = root.findViewById(R.id.cv_todo_home);
+        toDo.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction()==MotionEvent.ACTION_DOWN){
+                    toDo.setCardElevation(35);
+                }
+                else if(event.getAction()==MotionEvent.ACTION_UP){
+                    toDo.setCardElevation(6);
+                    startActivity(new Intent(getContext(), ToDo.class));
                 }
                 return true;
             }

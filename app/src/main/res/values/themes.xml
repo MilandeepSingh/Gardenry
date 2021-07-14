@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Gardenry" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#20652F</item>
+        <item name="colorPrimary">@color/dark_green</item>
         <item name="colorPrimaryVariant">#10551F</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

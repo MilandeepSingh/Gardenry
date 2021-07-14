@@ -7,17 +7,19 @@
     tools:context=".GardeningTools"
     android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_g_tools"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:backgroundTint="@color/dark_green"
-            app:titleTextColor="@color/white"
-            app:title="Gardening Tools"/>
+            android:layout_height="60dp"
+            android:background="@color/dark_green"
+            android:text="Gardening Tools"
+            android:textSize="26dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:hint="tyu"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
 
         <ListView
             android:id="@+id/ll_g_tools"

@@ -123,6 +123,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_todo_home"
                     android:layout_width="wrap_content"
                     android:layout_height="160dp"
                     android:layout_columnWeight="1"
@@ -140,11 +141,11 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_bell"/>
+                            android:src="@drawable/todo"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Reminders"
+                            android:text="To Do"
                             android:textColor="@color/black"
                             android:textSize="22sp"
                             android:textStyle="bold"

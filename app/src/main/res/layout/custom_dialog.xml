@@ -4,7 +4,8 @@
     android:layout_width="350dp"
     android:layout_height="300dp"
     android:background="#0000"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
 
 
@@ -99,7 +100,7 @@
         <Button
             android:id="@+id/btn_save_custom_dialog"
             android:layout_width="105dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:background="@drawable/rounded_corners"
             android:clickable="true"
             android:text="Save"
@@ -107,18 +108,18 @@
             android:layout_marginRight="25dp"
             android:shadowColor="@color/black"
             android:outlineSpotShadowColor="@color/black"
-            android:backgroundTint="@color/cardview_light_background"
+            app:backgroundTint="@color/dark_green"
             android:elevation="25dp"/>
 
 
         <Button
             android:id="@+id/btn_cancel_custom_dialog"
             android:layout_width="105dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="25dp"
             android:clickable="true"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/cardview_light_background"
+            app:backgroundTint="@color/dark_green"
             android:text="Cancel"
             android:textStyle="bold"
             android:shadowColor="@color/black"

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="350dp"
     android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/rounded_corners"
-    android:backgroundTint="@color/cardview_light_background">
+    android:backgroundTint="@color/cardview_light_background"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,7 +52,7 @@
             android:layout_marginRight="25dp"
             android:shadowColor="@color/black"
             android:outlineSpotShadowColor="@color/black"
-            android:backgroundTint="@color/cardview_light_background"
+            app:backgroundTint="@color/dark_green"
             android:elevation="25dp"/>
 
 
@@ -62,7 +63,7 @@
             android:layout_marginLeft="25dp"
             android:clickable="true"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/cardview_light_background"
+            app:backgroundTint="@color/dark_green"
             android:text="No"
             android:textStyle="bold"
             android:shadowColor="@color/black"

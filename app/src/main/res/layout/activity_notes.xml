@@ -17,7 +17,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
         android:background="@color/dark_green">
 
         <TextView
@@ -30,6 +29,7 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
             android:hint="tyu"
+            android:textStyle="bold"
             />
 
         <ImageButton
