@@ -37,4 +37,11 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">@color/dark_green</color>
     <color name="colorAccent">#000000</color>
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+
+    <color name="themeColor">#FF000000</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="contentTextColor">#020000</color>
 </resources>

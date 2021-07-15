@@ -49,7 +49,7 @@ public class EditNote extends AppCompatActivity {
         position = intent.getIntExtra("position",-1);
 
 
-        fb.collection("Users").document("Irish")
+        fb.collection("Users").document(LOGGED_USER.email)
                 .collection("My Notes").document(strDateTimeMillies)
                 .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -77,7 +77,7 @@ public class EditNote extends AppCompatActivity {
                     View buttons = findViewById(R.id.ll_buttons_edit_note);
                     pbar.setVisibility(View.VISIBLE);
                     buttons.setVisibility(View.GONE);
-                fb.collection("Users").document("Irish")
+                fb.collection("Users").document(LOGGED_USER.email)
                         .collection("My Notes").document(strDateTimeMillies)
                         .update("note", note)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -108,7 +108,7 @@ public class EditNote extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        fb.collection("Users").document("Irish")
+                        fb.collection("Users").document(LOGGED_USER.email)
                                 .collection("My Notes").document(strDateTimeMillies)
                                 .delete().addOnFailureListener(new OnFailureListener() {
                             @Override

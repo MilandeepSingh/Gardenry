@@ -126,7 +126,7 @@ public class CustomDialogClass extends Dialog implements
 
 
     void changeQty(int qt){
-        firebaseFirestore.collection("Users").document("Irish")
+        firebaseFirestore.collection("Users").document(LOGGED_USER.email)
                 .collection("My Plants").document(name)
                 .update("qty", qt);
         result=qt;

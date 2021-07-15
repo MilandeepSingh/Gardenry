@@ -87,7 +87,7 @@ public class NewRequest extends AppCompatActivity {
         long timeMilli = date.getTime();
         String strDateTimeMillies = Long.toString(timeMilli);
         Request request = new Request(name, desc,strDateTimeMillies);
-        fb.collection("Users").document("Irish")
+        fb.collection("Users").document(LOGGED_USER.email)
                 .collection("Requests").document(strDateTimeMillies)
                 .set(request)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

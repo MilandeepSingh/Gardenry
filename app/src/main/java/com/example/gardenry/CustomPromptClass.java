@@ -9,6 +9,8 @@ import android.view.Window;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.gardenry.ui.myplants.MyPlantsFragment;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -55,7 +57,7 @@ public class CustomPromptClass extends Dialog implements
         switch (v.getId()) {
             case R.id.btn_yes_custom_prompt:
                 //((Activity)c).finish();
-                    firebaseFirestore.collection("Users").document("Irish")
+                    firebaseFirestore.collection("Users").document(LOGGED_USER.email)
                             .collection("My Plants").document(name)
                             .delete()
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -65,6 +67,9 @@ public class CustomPromptClass extends Dialog implements
                             MyPlantsFragment.myPlantsAdapter.plants.remove(position);
                             MyPlantsFragment.myPlantsAdapter.notifyItemRemoved(position);
                             MyPlantsFragment.myPlantsAdapter.notifyItemRangeChanged(position, MyPlantsFragment.myPlantsAdapter.getItemCount());
+                            if(position==0){
+                                ((AppCompatActivity)c).findViewById(R.id.ll_no_my_plants).setVisibility(View.VISIBLE);
+                            }
                             dismiss();
                         }
                     }).addOnFailureListener(new OnFailureListener() {

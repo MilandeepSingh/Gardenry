@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.gardenry.AllPlants;
+import com.example.gardenry.LOGGED_USER;
 import com.example.gardenry.MyPlant;
 import com.example.gardenry.MyPlantsAdapter;
 import com.example.gardenry.NewPlant;
@@ -118,7 +119,7 @@ public class MyPlantsFragment extends Fragment {
 //        plants.add(new MyPlant("Orange", 7));
 
 
-        fb.collection("Users").document("Irish").collection("My Plants").get()
+        fb.collection("Users").document(LOGGED_USER.email).collection("My Plants").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -129,6 +130,11 @@ public class MyPlantsFragment extends Fragment {
                             plants.add(plant);
                         }
 
+                        if(plants.isEmpty()){
+                            root.findViewById(R.id.ll_no_my_plants).setVisibility(View.VISIBLE);
+                            root.findViewById(R.id.ll_anim_loading).setVisibility(View.GONE);
+                            plantList.setVisibility(View.GONE);
+                        }
                         myPlantsAdapter.notifyDataSetChanged();
                     }
                 }).addOnFailureListener(new OnFailureListener() {

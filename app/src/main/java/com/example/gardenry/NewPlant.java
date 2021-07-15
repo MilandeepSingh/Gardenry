@@ -114,7 +114,7 @@ public class NewPlant extends AppCompatActivity {
         });
 
         ArrayList<String> myPlantNames = new ArrayList<>();
-        firebaseFirestore.collection("Users").document("Irish").collection("My Plants").get()
+        firebaseFirestore.collection("Users").document(LOGGED_USER.email).collection("My Plants").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -166,13 +166,13 @@ public class NewPlant extends AppCompatActivity {
                     View linearLayout = findViewById(R.id.ll_pbar_add_new_plant);
                     btnAdd.setVisibility(View.GONE);
                     linearLayout.setVisibility(View.VISIBLE);
-                    firebaseFirestore.collection("Users").document("Irish")
+                    firebaseFirestore.collection("Users").document(LOGGED_USER.email)
                             .collection("My Plants").document(plantName)
                             .set(new MyPlant(plantName, qty))
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(getApplicationContext(), "Plant added", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Plant added", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         String fragmentToDisplay = "MyPlantsFragment";
                         intent.putExtra("fragmentToDisplay", fragmentToDisplay);

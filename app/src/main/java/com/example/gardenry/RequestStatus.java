@@ -59,7 +59,7 @@ public class RequestStatus extends AppCompatActivity {
 
 
         db = FirebaseFirestore.getInstance();
-        db.collection("Users").document("Irish")
+        db.collection("Users").document(LOGGED_USER.email)
                 .collection("Requests").orderBy("timestamp", Query.Direction.DESCENDING)
                 .get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override

@@ -33,7 +33,7 @@ Handler handler;
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), Register.class));
                 finish();
             }
         }, 4000);

@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -64,6 +65,9 @@ public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsAdapter.ViewHo
                             holder.plantImage.setImageBitmap(bitmap);
                             holder.plantImage.setVisibility(View.VISIBLE);
                             holder.progressBar.setVisibility(ProgressBar.GONE);
+                            if(position==(getItemCount()-1)){
+                                ((AppCompatActivity)context).findViewById(R.id.ll_anim_loading).setVisibility(View.GONE);
+                            }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -103,9 +107,7 @@ public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsAdapter.ViewHo
         public ImageView plantImage;
         public TextView plantName;
         public TextView plantQty;
-        public LinearLayout linearLayout;
         public ProgressBar progressBar;
-
         public View view;
 
         public ViewHolder(View itemView) {

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Gardenry</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
     <string name="title_explore">Explore</string>
     <string name="title_home">Home</string>
     <string name="title_my_plants">My Plants</string>

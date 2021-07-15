@@ -50,13 +50,20 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
                 }
             });
             AlertDialog dialog = builder.create();
+            dialog.setCanceledOnTouchOutside(true);
+            dialog.setOnCancelListener(
+                    new DialogInterface.OnCancelListener() {
+                        @Override
+                        public void onCancel(DialogInterface dialog) {
+                            //When you touch outside of dialog bounds,
+                            //the dialog gets canceled and this method executes.
+                            //adapter.getContext().startActivity(new Intent(adapter.getContext(),adapter.getContext().getClass()));
+                            ((AppCompatActivity)adapter.getContext()).recreate();
+                        }
+                    }
+            );
             dialog.show();
-            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                @Override
-                public void onDismiss(DialogInterface dialog) {
-                    adapter.getContext().startActivity(new Intent(adapter.getContext(),adapter.getContext().getClass()));
-                }
-            });
+
         } else {
             adapter.editItem(position); //defined in out adapter class
         }

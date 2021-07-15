@@ -64,7 +64,7 @@ public class Notes extends AppCompatActivity {
         });
 
 
-        fb.collection("Users").document("Irish")
+        fb.collection("Users").document(LOGGED_USER.email)
                 .collection("My Notes").orderBy("strDateTimeMillis", Query.Direction.DESCENDING).get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override

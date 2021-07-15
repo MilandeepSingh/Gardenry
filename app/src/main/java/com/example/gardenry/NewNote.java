@@ -49,7 +49,7 @@ public class NewNote extends AppCompatActivity {
                     View buttons = findViewById(R.id.ll_buttons_new_note);
                     pbar.setVisibility(View.VISIBLE);
                     buttons.setVisibility(View.GONE);
-                fb.collection("Users").document("Irish")
+                fb.collection("Users").document(LOGGED_USER.email)
                         .collection("My Notes").document(strDateTimeMillies)
                         .set(new Note(strDateTimeMillies, note))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
