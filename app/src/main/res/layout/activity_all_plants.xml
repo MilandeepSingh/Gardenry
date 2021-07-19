@@ -63,6 +63,20 @@
                 android:id="@+id/rcv_plantlist_all_plants"
                 android:paddingBottom="60dp"
                 android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_no_all_plants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="You have no plants here.\nClick on '+' icon to start adding plants..."
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
    <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -79,4 +93,29 @@
         android:elevation="8dp"
         app:tint="@color/white"
         android:backgroundTint="@color/dark_green"/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_anim_loading_all_plants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#afff">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/loading_anim"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading your plants..."
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

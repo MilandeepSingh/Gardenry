@@ -77,4 +77,9 @@ public class NewNote extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), Notes.class));
+    }
 }

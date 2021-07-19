@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#0000"
-    android:padding="20dp">
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="7dp">
     <!--    <ImageView-->
     <!--        android:layout_width="91dp"-->
     <!--        android:layout_height="91dp"-->
@@ -15,7 +17,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#1a1a1a"
         android:elevation="25dp"
         android:outlineSpotShadowColor="@color/black"
         android:padding="15dp">
@@ -31,7 +33,8 @@
             android:textSize="24dp"
             android:textStyle="bold"
             android:gravity="center"
-            android:id="@+id/txt_name_request_item"/>
+            android:id="@+id/txt_name_request_item"
+            android:textColor="@color/white"/>
 
         </LinearLayout>
         <!--    <TextView-->
@@ -60,6 +63,7 @@
                 android:layout_alignParentLeft="true"
                 android:textSize="22dp"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 />
 
             <TextView
@@ -68,7 +72,8 @@
                 android:text="Not yet given..."
                 android:textSize="22sp"
                 android:layout_marginLeft="120dp"
-                android:id="@+id/txt_description_request_item"/>
+                android:id="@+id/txt_description_request_item"
+                android:textColor="@color/white"/>
             </RelativeLayout>
         </LinearLayout>
 
@@ -86,6 +91,7 @@
                     android:layout_alignParentLeft="true"
                     android:textSize="22dp"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     />
 
                 <TextView
@@ -94,7 +100,8 @@
                     android:text="Not yet given..."
                     android:textSize="22sp"
                     android:layout_marginLeft="120dp"
-                    android:id="@+id/txt_remarks_request_item"/>
+                    android:id="@+id/txt_remarks_request_item"
+                    android:textColor="@color/white"/>
             </RelativeLayout>
         </LinearLayout>
 

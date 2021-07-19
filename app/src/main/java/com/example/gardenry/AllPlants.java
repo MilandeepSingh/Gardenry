@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -137,6 +138,12 @@ public class AllPlants extends AppCompatActivity {
                             plants.add(plantInfo);
                         }
 
+                        if(plants.isEmpty()){
+                            findViewById(R.id.ll_no_all_plants).setVisibility(View.VISIBLE);
+                            findViewById(R.id.ll_anim_loading_all_plants).setVisibility(View.GONE);
+                            plantList.setVisibility(View.GONE);
+                        }
+
                         allPlantsAdapter.notifyDataSetChanged();
                     }}).addOnFailureListener(new OnFailureListener() {
             @Override
@@ -162,7 +169,7 @@ public class AllPlants extends AppCompatActivity {
 //                });
 
 
-        allPlantsAdapter = new AllPlantsAdapter(getApplicationContext(), plants);
+        allPlantsAdapter = new AllPlantsAdapter(AllPlants.this, plants);
         plantList.setHasFixedSize(true);
 
         StaggeredGridLayoutManager gridLayoutManager = new StaggeredGridLayoutManager( 3, LinearLayoutManager.VERTICAL);
@@ -170,9 +177,7 @@ public class AllPlants extends AppCompatActivity {
 
         plantList.setAdapter(allPlantsAdapter);
 
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

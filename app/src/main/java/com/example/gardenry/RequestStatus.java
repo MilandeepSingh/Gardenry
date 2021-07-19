@@ -36,6 +36,8 @@ public class RequestStatus extends AppCompatActivity {
         recyclerView = findViewById(R.id.Requeststatus_view);
         arrayList = new ArrayList<>();
 
+        LOGGED_USER.email="bobo@hotmail.com";
+
 
         myRequestAdapter = new MyRequestAdapter(this, arrayList);
         recyclerView.setHasFixedSize(true);
@@ -78,5 +80,10 @@ public class RequestStatus extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 }

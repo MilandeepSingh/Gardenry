@@ -1,5 +1,6 @@
 package com.example.gardenry;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -64,6 +66,9 @@ public class AllPlantsAdapter extends RecyclerView.Adapter<AllPlantsAdapter.View
                             holder.plantImage.setImageBitmap(bitmap);
                             holder.plantImage.setVisibility(View.VISIBLE);
                             holder.progressBar.setVisibility(ProgressBar.GONE);
+                            if(position==(getItemCount()-1)){
+                                ((AllPlants)context).findViewById(R.id.ll_anim_loading_all_plants).setVisibility(View.GONE);
+                            }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override

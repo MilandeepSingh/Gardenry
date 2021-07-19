@@ -1,6 +1,7 @@
 package com.example.gardenry;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -56,7 +57,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    int c=2;
 
-
-
+    @Override
+    public void onBackPressed() {
+        c--;
+        if(c==0){
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);}
+        else Toast.makeText(getApplicationContext(),"Press again to exit!", Toast.LENGTH_SHORT).show();
+    }
 }

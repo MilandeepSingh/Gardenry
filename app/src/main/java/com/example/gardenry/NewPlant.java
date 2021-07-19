@@ -224,6 +224,13 @@ public class NewPlant extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        String fragmentToDisplay = "MyPlantsFragment";
+        intent.putExtra("fragmentToDisplay", fragmentToDisplay);
+        startActivity(intent);
+    }
 
 
 

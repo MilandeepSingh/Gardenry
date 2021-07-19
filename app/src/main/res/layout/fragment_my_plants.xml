@@ -111,7 +111,6 @@
             android:background="#afff">
 
             <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animationView"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 app:lottie_autoPlay="true"

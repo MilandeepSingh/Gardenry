@@ -116,4 +116,9 @@ public class NewRequest extends AppCompatActivity {
 //            }
 //        });
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), RequestStatus.class));
+    }
 }

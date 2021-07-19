@@ -146,4 +146,9 @@ public class EditNote extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), Notes.class));
+    }
 }
