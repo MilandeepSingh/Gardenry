@@ -227,11 +227,7 @@ public class NewPlant extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        String fragmentToDisplay = "MyPlantsFragment";
-        intent.putExtra("fragmentToDisplay", fragmentToDisplay);
         startActivity(intent);
     }
-
-
 
 }

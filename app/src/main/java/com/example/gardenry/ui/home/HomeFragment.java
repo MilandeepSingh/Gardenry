@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +20,9 @@ import com.example.gardenry.NewPlant;
 import com.example.gardenry.Notes;
 import com.example.gardenry.R;
 import com.example.gardenry.RequestStatus;
+import com.example.gardenry.SplashScreen;
 import com.example.gardenry.ToDo;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeFragment extends Fragment {
 
@@ -114,6 +117,25 @@ public class HomeFragment extends Fragment {
                 else if(event.getAction()==MotionEvent.ACTION_UP){
                     toDo.setCardElevation(6);
                     startActivity(new Intent(getContext(), ToDo.class));
+                }
+                return true;
+            }
+        });
+
+        CardView logout = root.findViewById(R.id.log_out);
+        logout.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction()==MotionEvent.ACTION_DOWN){
+                    logout.setCardElevation(35);
+                }
+                else if(event.getAction()==MotionEvent.ACTION_UP){
+
+                    logout.setCardElevation(6);
+
+                    FirebaseAuth.getInstance().signOut();
+                    Toast.makeText(getContext(),"Logout!",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getContext(), SplashScreen.class));
                 }
                 return true;
             }

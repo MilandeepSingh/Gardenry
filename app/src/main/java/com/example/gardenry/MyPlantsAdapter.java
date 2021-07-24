@@ -65,8 +65,12 @@ public class MyPlantsAdapter extends RecyclerView.Adapter<MyPlantsAdapter.ViewHo
                             holder.plantImage.setImageBitmap(bitmap);
                             holder.plantImage.setVisibility(View.VISIBLE);
                             holder.progressBar.setVisibility(ProgressBar.GONE);
+                            try{
                             if(position==(getItemCount()-1)){
                                 ((AppCompatActivity)context).findViewById(R.id.ll_anim_loading).setVisibility(View.GONE);
+                            }}
+                            finally {
+
                             }
                         }
                     }).addOnFailureListener(new OnFailureListener() {

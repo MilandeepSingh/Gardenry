@@ -24,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         //findViewById(R.id.navigation_my_plants).callOnClick();
 
-
-
-
-
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -36,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController((BottomNavigationView) findViewById(R.id.nav_view), navController);
+        NavigationUI.setupWithNavController(navView, navController);
 
         String fragmentToDisplay = getIntent().getStringExtra("fragmentToDisplay");
         if(fragmentToDisplay!=null && fragmentToDisplay.equals("MyPlantsFragment")){

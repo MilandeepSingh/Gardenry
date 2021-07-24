@@ -74,6 +74,12 @@ public class Notes extends AppCompatActivity {
                             notes.add(note);
                             notesAdapter.notifyDataSetChanged();
                         }
+
+                        if(notes.isEmpty()){
+                            findViewById(R.id.ll_no_notes).setVisibility(View.VISIBLE);
+                            findViewById(R.id.ll_loading_notes).setVisibility(View.GONE);
+                        }
+                        else Gardener_Recycle.setVisibility(View.VISIBLE);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             @Override

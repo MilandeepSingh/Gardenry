@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="You have no plants here.\nClick on '+' icon to start adding plants..."
+                    android:text="Sorry, there are no plants available at this moment..."
                     android:textSize="20sp"/>
             </LinearLayout>
 
